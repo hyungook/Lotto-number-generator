@@ -1,101 +1,126 @@
-@font-face{
-  src: url(fonts/NanumBarunpenB.ttf);
-  font-family: pen;
-}
+/* index.css */
+
 *{
-  font-family: pen;
+  margin: 0;
+  padding: 0;
 }
-html, body{
-  margin: 0; padding: 0;
-  background-color: #eeeeee;
+
+body {
+  background-color: #fafbfc;
 }
-#container{
+
+#container {
   width: 360px;
   margin: 0 auto;
   text-align: center;
-  /* border: 1px solid #cccccc; */
-  /* background-color: #ffffff; */
+  margin-bottom: 70px;
 }
-/* header{
-  padding: 20px;
-  color: white;
-  background-color: 
-} */
-header > h1{
-  font-size: 48px;
-  margin: 16px 0;
-  color: orange;
+
+h1 {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
 }
-footer > h3{
-  border-top: 1px solid #aeaeae;
-  padding-top: 10px;
+
+section > div > div{
+  background-color: #fff;
 }
-.style-numbers{
-  /* border: 1px solid #cccccc; */
-  width: 350px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  /* background-color: #ffffff; */
-}
-.style-numbers > div{
-  width: 50px;
-  height: 36px;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-}
-.number{
+
+.style-numbers {
+  width: 360px;
   margin: 0;
-  line-height: 40px;
-  border: 1px solid #aeaeae;
-  border-radius: 8px;
-  color: #000000;
-  background-color: #ffffff;
+  display: flex;  /* 빈공간 최소화! */
+  flex-wrap: wrap;  /* 공간이 넘치면 행 이동! */
+  justify-content: space-between;
+  margin-bottom: 16px;
+  
 }
-.selected > p{
-  color: white;
-  background-color: orange; 
+
+.style-numbers > div {
+  width: 54px;
+  height: 54px;
+  margin: 6px 5px;
+/*  padding: 5px;*/
+  text-align: center;
+  display: flex;
+  align-items: center; 
+  border-radius: 50px;
+  
+  
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
-.btn{
-  margin: 18px 0 0 0;
-  width: 120px;
-  height: 50px;
-  font-size: 18px;
-  color: white;
-  background-color: orange; 
-  border: none;
-  border-radius: 8px;
+
+
+.selected {
+  background-color: #000;
 }
+
+.selected > p {
+  color: #fff;
+}
+
+.style-numbers > div > p {
+  margin: 0 auto;
+}
+
 .ing{
+  /* 공간은 차지하되 보이진 않는다. */
   visibility: hidden;
 }
-.visible{
+.visible {
   visibility: visible;
 }
 
-.reset{
-  border: none;
-  border-radius: 6px;
-  color: white;
-  background-color: coral;
-  width: 60px;
-  height: 20px;
+
+
+
+.reset {
   display: none;
 }
 
-.cNumbers{
-  display: flex;
-  justify-content: center;
-  border: 1px solid #cccccc;
-  border-radius: 12px;
-  margin: 0 0 5px 0;
-  background-color: #ffffff;
+
+.js-btn, .js-reset {
+  width: 360px;
+  height: 34px;
+  border: none;
+/*  border-radius: 8px;*/
+  background-color: #000;
+  color: #fff;
 }
 
-.cNumber{
-  margin: 10px;
-  width: 32px; height: 32px; font-size: 24px;
-  border-radius: 50%; /*background-color: darkslategrey;*/
-  color: white;
+.cNumbers {
+  width: 360px;
+  height: 36px;
+  background-color: #fff;
+  border: 1px solid #000;
+/*  margin-bottom: 10px;*/
+/*  border-radius: 8px;*/
+  box-sizing: border-box;
 }
+
+.cNumber {
+  display: inline-block;
+  margin: 4px;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+}
+h3 {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 50px;
+}
+
+
+
+
+
