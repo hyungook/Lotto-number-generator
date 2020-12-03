@@ -10,8 +10,6 @@ const creatingComment = ["생성중..","생성중...","생성중."]
 let step = 0;  // 현재 생성된 번호의 개수
 let intervalId = 0;  //  주기적인 동작의 데이터!
 
-
-
 function resetNumbers(){
   
   clearNumbers();
@@ -21,8 +19,6 @@ function resetNumbers(){
   $(".js-reset").hide();
   
 }
-
-
 
 function displayNumbers(){
   const nNumberContainer = $('<div>')  // div 생성!
@@ -41,16 +37,9 @@ function displayNumbers(){
   $(".js-reset").show();
 }
 
-
-
-
 function clearNumbers(){
   $('.selected').removeClass('selected');
 }
-
-
-
-
 
 //  만들어진 번호 표시하기(500ms 마다 한번씩)
 function pointNumbers(){
@@ -70,10 +59,6 @@ function pointNumbers(){
     isCreate = false;
   }
 }
-
-
-
-
 
 //  로또 번호 랜덤으로 생성하기
 function createNumbers(){
@@ -113,9 +98,6 @@ function createNumbers(){
   
 }
 
-
-
-
 // 1to 45 숫자를 웹문서에 뿌려주기
 function createWholeNumber(){
   for(let i = 1; i <= 45; i++){
@@ -139,30 +121,3 @@ $(document).ready(function(){
   $(".js-reset").click(resetNumbers);
   
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
