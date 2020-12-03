@@ -93,9 +93,7 @@ function createNumbers(){
   console.log(lotto);
   
   //완성된 로또 번호를 가지고, 번호별 색칠하기!
-  
   intervalId = setInterval(pointNumbers,500);
-  
 }
 
 // 1to 45 숫자를 웹문서에 뿌려주기
