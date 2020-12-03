@@ -1,9 +1,7 @@
 /*
 lotto.js
-
 로또 관련 기능을 제공하는 자체 제작 라이브러리
 */
-
 let isCreate = false;  // 생성중인 상태 표시
 const lotto = new Array(6);  //  6칸짜리 배열
 const creatingComment = ["생성중..","생성중...","생성중."]
@@ -11,13 +9,10 @@ let step = 0;  // 현재 생성된 번호의 개수
 let intervalId = 0;  //  주기적인 동작의 데이터!
 
 function resetNumbers(){
-  
   clearNumbers();
-  
   //  결과창을 싹 비우고, 자기 자신도 숨는다.
   $(".result").empty();
   $(".js-reset").hide();
-  
 }
 
 function displayNumbers(){
